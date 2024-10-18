@@ -1,0 +1,38 @@
+.login_parent{
+   display: flex;
+   justify-content: center;
+    height: 100vh;
+    
+}
+.login_parent .container{
+    width: 65%;
+}
+.login_header h1{
+    color: #0C94EA;
+    ;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 200% */
+}
+.login_logo{
+    text-align: center;
+}
+.login_img{
+    text-align: center;
+}
+.login_header p{
+    color: #314559;
+
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    opacity: 0.45;
+}
+
+

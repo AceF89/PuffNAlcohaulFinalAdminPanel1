@@ -1,0 +1,419 @@
+.symbol-icon {
+  position: relative;
+  width: 13vw;
+  height: 13vh;
+  object-fit: contain;
+}
+.mycolour{
+  color: #0C94EA;
+}
+.hand{
+  cursor: pointer;
+}
+.Alcohol {
+  color: var(--color-darkslategray);
+}
+.Alcohol-booking-app-container {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 48px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.symbol-parent-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl);
+  gap: 16px;
+}
+.frame-child-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 315px;
+  opacity: 0.5;
+}
+.characters-2-icon {
+position: absolute;
+    top: 425px;
+    left: 998px;
+    width: 328px;
+    height: 117.1px;
+    z-index: 1;
+}
+.rectangles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-darkslategray);
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+}
+.characters-2-icon1 {
+  position: absolute;
+  top: 21px;
+  left: 322px;
+  width: 328px;
+  height: 117.1px;
+  object-fit: contain;
+  z-index: 1;
+}
+.rectangles1 {
+  top: 158px;
+  background-color: var(--color-darkslategray);
+  height: 1px;
+  opacity: 0.24;
+  z-index: 1;
+}
+.rectangle-group,
+.rectangles1,
+.rectangles2 {
+  position: relative;
+  left: 0;
+  width: 1440px;
+}
+.rectangles2 {
+  top: 0;
+  background-color: var(--color-darkslategray);
+  height: 1px;
+  opacity: 0.24;
+  z-index: 2;
+}
+.rectangle-group {
+  bottom: 41px;
+  height: 159px;
+}
+.frame-parent-div {
+  position: relative;
+  width: 1594px;
+  height: 474px;
+  max-width: 111%;
+  flex-shrink: 0;
+}
+.app-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-color: #282c34;
+
+}
+.create-an-account,
+.sign-up {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 40px;
+  font-weight: 700;
+  font-family: inherit;
+  // color: var(--color-blue);
+  color: #0C94EA
+}
+.create-an-account {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: var(--color-darkslategray);
+  opacity: 0.45;
+}
+.sign-up-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.email,
+.password {
+  position: relative;
+  line-height: 26px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 43px;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+.password {
+  width: 74px;
+}
+.email-password {
+  width: 522px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  height: 50px;
+}
+.mail-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  opacity: 0.24;
+  margin-left: 10px;
+}
+.enter-email,
+.textfield {
+  display: flex;
+  align-items: center;
+}
+.enter-email {
+  width: 300px !important;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-poppins);
+  font-size: var(--font-size-sm);
+  background-color: transparent;
+  position: relative;
+  line-height: 26px;
+  // color: var(--color-gray);
+  color: black ;
+  text-align: left;
+  // opacity: 0.24;
+  height: 50px;
+}
+.textfield {
+  flex: 1;
+  border-radius: var(--br-xs);
+  background-color: var(--color-whitesmoke);
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: var(--padding-4xs) var(--padding-base) var(--padding-5xs);
+  box-sizing: border-box;
+  gap: var(--gap-5xs);
+  min-width: 276px;
+  max-width: 100%;
+}
+.lock-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  opacity: 0.24;
+  margin-left: 10px;
+}
+.enter-password,
+.hide-button {
+  display: flex;
+  align-items: center;
+}
+.enter-password {
+  width: 300px !important;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-poppins);
+  font-size: var(--font-size-sm);
+  background-color: transparent;
+  flex: 1;
+  position: relative;
+  line-height: 26px;
+  // color: var(--color-gray);
+  color: black;
+  text-align: left;
+  // opacity: 0.24;
+  min-width: 120px;
+  height: 50px;
+}
+.hide-button {
+  width: 228px;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.hide-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.textfield1 {
+  flex: 1;
+  border-radius: var(--br-xs);
+  background-color: var(--color-whitesmoke);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-4xs) var(--padding-base) var(--padding-5xs);
+  box-sizing: border-box;
+  min-width: 276px;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.input-frame,
+.textfield-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.textfield-container {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: start !important;
+  justify-content:center ;
+  gap: 1rem;
+}
+.input-frame {
+  width: 100%;
+  min-height: 90px;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-darkslategray);
+}
+.sign-up1 {
+  position: relative;
+  line-height: 28px;
+  font-weight: 500;
+}
+.button-54,
+.sign-in,
+.sign-up-frame {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-poppins);
+}
+.button-54 {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  background-color: #0C94EA !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  // background-color: var(--color-blue);
+  box-shadow: 4px 8px 16px rgba(49, 69, 89, 0.24);
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-xl) var(--padding-5xs) 21px;
+  text-align: left;
+  font-size: 16px;
+  color: var(--color-white);
+  height: 50px;
+}
+.button-position{
+  position: absolute;
+  bottom: -50%;
+  width: 100%;
+}
+.sign-in,
+.sign-up-frame {
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  // gap: var(--gap-5xl);
+  color: var(--color-blue);
+}
+.sign-up-frame {
+  width: 911px;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+.sign-in {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0 90px;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: 32px;
+  height: 100vh;
+}
+@media screen and (max-width: 750px) {
+  .Alcohol-booking-app-container {
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sign-up,
+  .Alcohol-booking-app-container {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .sign-up {
+    line-height: 38px;
+
+  }
+  .email-password {
+    flex-wrap: wrap;
+  }
+}
+
+.input-group {
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-columns: 1fr 7fr !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  max-width:  400px !important;
+  
+}
+
+.input-group .invalid-feedback {
+  grid-column: 1 / span 2 !important;
+}
+
+// .input-group > .form-control, .input-group > .form-select {
+//   // flex: 0 !important;
+// }
+.input-group{
+  border: 1px solid #EAEBEC;
+  border-radius: 9px;
+}
+
+.input-group > .form-control, .input-group > .form-select{
+width: 100% !important;
+border: none !important;
+}
+
+.form-label{
+  font-weight: 500;
+  color: #37353B;
+}
+
+.top{
+  display: flex;
+  padding-top: 3vh;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #FAFAFA !important;
+}
+
+.bottom-div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.1);
+  box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.1);
+}
+
+.sign-in{
+  overflow: initial;
+  .login-graphic{
+    height: 60vh;
+  }
+  .form-section{
+    height: 40vh;
+  }
+}

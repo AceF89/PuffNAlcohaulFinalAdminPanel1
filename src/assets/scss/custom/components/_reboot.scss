@@ -1,0 +1,44 @@
+//
+// reboot.scss
+//
+body {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    &.loading {
+        visibility: hidden;
+        opacity: 0;
+    }
+    background-color: #fff;
+}
+
+// Forms
+label {
+    font-weight: $font-weight-bold;
+}
+
+
+button:focus {
+    outline: none;
+}
+
+// .btn-primary{
+//     background-color: $green;
+//     border:  1px solid $green;
+// }
+
+// .btn-outline-primary{
+//     color: $green;
+//     border-color:$green;
+// }
+.row >* {
+    position: relative;
+}
+
+a{
+    color: $black !important;
+    text-decoration: none;
+
+    &:focus{
+        outline: none;
+    }
+}

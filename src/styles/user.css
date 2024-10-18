@@ -1,0 +1,25 @@
+.userlist_heading{
+    color: #0C94EA;
+font-size: 24px;
+font-weight: 700;
+
+}
+.user_details_row{
+    padding: 3rem;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 2px 24px 0px rgba(49, 69, 89, 0.12);
+}
+.cancel_btn{
+    border-radius: 12px;
+    border: 1px solid #0C94EA;
+    background: #FFF;
+    box-shadow: 4px 8px 16px 0px rgba(49, 69, 89, 0.12);
+padding: 6px 30px
+  }
+  .save_btn{
+    border-radius: 12px;
+    background: #0C94EA;
+    box-shadow: 4px 8px 16px 0px rgba(49, 69, 89, 0.24);
+padding: 6px 30px;
+  }

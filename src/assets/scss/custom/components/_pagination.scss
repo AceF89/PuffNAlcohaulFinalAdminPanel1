@@ -1,0 +1,23 @@
+// 
+// pagination.scss
+//
+
+
+// Pagination rounded (Custom)
+.pagination-rounded {
+    .page-link {
+        border-radius: 30px !important;
+        margin: 0 3px;
+        border: none;
+       
+    }
+}
+
+.pagination{
+    .active{
+    .page-link {
+        background-color: #0C94EA  !important;
+        color: white !important;
+    }}
+}
+

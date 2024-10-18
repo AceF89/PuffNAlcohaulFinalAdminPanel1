@@ -1,0 +1,97 @@
+.choose-language {
+    position: relative;
+    line-height: 22px;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+  .chevron-down-large,
+  .english {
+    position: relative;
+    flex-shrink: 0;
+  }
+  .english {
+    // line-height: 22px;
+    // display: inline-block;
+    // width: 573px;
+    // max-width: calc(100% - 34px);
+    line-height: 22px;
+    display: inline-block;
+    width: 100%;
+    border: 0px transparent;
+    background: transparent;
+  }
+  .chevron-down-large {
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+  }
+  .input-field-container,
+  .textfield-language {
+    align-self: stretch;
+    display: flex;
+    max-width: 100%;
+  }
+  .textfield-language {
+    border-radius: var(--br-xs);
+    background-color: var(--color-whitesmoke);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-xs) var(--padding-5xl);
+    box-sizing: border-box;
+    gap: var(--gap-xl);
+    font-size: var(--font-size-sm);
+  }
+  .input-field-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-7xs);
+  }
+  .get-started {
+    position: relative;
+    line-height: 28px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .arrow-right-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .button-2,
+  .language-selection {
+    display: flex;
+    text-align: left;
+    font-family: var(--font-poppins);
+  }
+  .button-2 {
+    align-self: stretch;
+    border-radius: var(--br-xs);
+    background-color: var(--color-blue);
+    box-shadow: 4px 8px 16px rgba(49, 69, 89, 0.24);
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-xs) var(--padding-xl);
+    gap: var(--gap-5xs);
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+    cursor: pointer;
+  }
+  .language-selection {
+    width: 914px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-xl);
+    box-sizing: border-box;
+    gap: var(--gap-5xl);
+    max-width: 100%;
+    font-size: var(--font-size-xs);
+    color: var(--color-darkslategray);
+  }
+  
