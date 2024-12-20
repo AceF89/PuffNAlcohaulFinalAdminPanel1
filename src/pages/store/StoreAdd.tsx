@@ -29,6 +29,7 @@ const defaultValues: {
   zipCode :number | string;
   latitude: number;
   longitude:number;
+  googlePlaceId: string;
 
 } = {
   Id: 0,
@@ -45,6 +46,7 @@ const defaultValues: {
   zipCode : "",
   longitude:0,
   latitude:0,
+  googlePlaceId: "",
 };
 
 const EventsEdit = () => {
@@ -81,7 +83,7 @@ const EventsEdit = () => {
     zipCode :number | string
     latitude: number;
     longitude:number;
-
+    googlePlaceId: string;
   }>({
     defaultValues: {
       ...defaultValues,
@@ -121,8 +123,10 @@ const EventsEdit = () => {
     latitude: number;
     longitude:number;
     zipCode:number | string;
+    googlePlaceId: string;
   }> = async (data) => {
   
+    debugger;
     // saveUserData
     try {
       const response = await saveStores({
@@ -137,10 +141,11 @@ const EventsEdit = () => {
         cityId:data.cityId,
         barcode:data.barcode,
         posApiKey:data.posApiKey,
-        latitude: lat,
-        longitude: lng,
+        latitude: data.latitude,
+        longitude: data.longitude,
         zipCode:data.zipCode,
-          });
+        googlePlaceId: data.googlePlaceId,
+      });
 
       if (response.statusCode === 200) {
         showToast("success", response.message);
@@ -175,6 +180,7 @@ const EventsEdit = () => {
         latitude:response.data.latitude,
         longitude:response.data.longitude,
         zipCode:response.data.zipCode,
+        googlePlaceId: response.data.googlePlaceId,
       });
     setDefaultAddress(response.data.address)
       setLoadoing(false);
@@ -276,21 +282,22 @@ const EventsEdit = () => {
 
   const countryId = watch("countryId");
   const stateId = watch("stateId");
-  const { fullAddress , address, isLoaded, loadError , lat , lng } = usePlacesAutocomplete("AIzaSyCTR1vsV9Ebf3_YFvJYMJgRgmfV1xppxAs");
+  const { address, isLoaded, loadError, fullAddress, lat, lng, placeId } = usePlacesAutocomplete("AIzaSyCTR1vsV9Ebf3_YFvJYMJgRgmfV1xppxAs");
 
   const selectedCountry = country?.find((loc: any) => loc.label === fullAddress.country);
   const seletedState = state?.find((loc: any) => loc.label === fullAddress.state)
   const selectedCity = city?.find((loc: any) => loc.label === fullAddress?.city)
 
   useEffect(() => {
-    setValue("address", address)
-    setValue("address", address)
-    setDefaultAddress(address)
-    setValue("zipCode" , fullAddress?.zipcode)
-    setValue("stateId" , seletedState?.value)
-    setValue("cityId" , selectedCity?.value)
-  }, [address , fullAddress , seletedState ,selectedCity])
-
+    setValue("address", address);
+    setValue("googlePlaceId", placeId);
+    setDefaultAddress(address);
+    setValue("zipCode", fullAddress?.zipcode);
+    setValue("stateId", seletedState?.value);
+    setValue("cityId", selectedCity?.value);
+    setValue("latitude", lat);
+    setValue("longitude", lng);
+  }, [address, fullAddress, seletedState, selectedCity, lat, lng, placeId]);
 
   useEffect(() => {
     if (countryId || selectedCountry) {
